@@ -1,3 +1,5 @@
 Backend/env-Diplom/
 Backend/app/__pycache__/
 Backend/__pycache__/
+Backend/migrations/__pycache__/env.cpython-37.pyc
+Backend/migrations/
