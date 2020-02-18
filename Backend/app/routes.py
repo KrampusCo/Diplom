@@ -30,7 +30,6 @@ def register():
     password_salt_hash = generate_password_hash(password)
     try:
         new_user = User(username=username,
-                        salt=salt,
                         password_salt_hash=password_salt_hash)
         db.session.add(new_user)
         db.session.commit()
