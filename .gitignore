@@ -3,3 +3,15 @@ Backend/app/__pycache__/
 Backend/__pycache__/
 Backend/migrations/__pycache__/env.cpython-37.pyc
 Backend/migrations/
+center/venv/
+storage/venv/
+storage/storageapp/__pycache__/routes.cpython-38.pyc
+storage/storageapp/__pycache__/models.cpython-38.pyc
+storage/storageapp/__pycache__/
+storage/migrations/
+storage/__pycache__/
+center/migrations/versions/__pycache__/f4e78463a7b2_.cpython-38.pyc
+center/migrations/versions/
+center/migrations/__pycache__/env.cpython-38.pyc
+center/centerapp/__pycache__/
+center/migrations/
