@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"cl",
+				"clickHandler\tabc"
+			],
+			[
+				"ma",
+				"MainHeader"
+			],
+			[
+				"bo",
+				"bottom\tabc"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
 				"file",
 				"file\tabc"
 			],
@@ -164,10 +180,6 @@
 				"type_array\tstatement"
 			],
 			[
-				"cl",
-				"client\tabc"
-			],
-			[
 				"me",
 				"measure_point\tabc"
 			],
@@ -322,10 +334,6 @@
 			[
 				"y",
 				"y\tstatement"
-			],
-			[
-				"st",
-				"storageapp\tabc"
 			],
 			[
 				"pass",
@@ -506,52 +514,45 @@
 			[
 				"TR",
 				"True\tabc"
-			],
-			[
-				"tim",
-				"timingUID\tabc"
-			],
-			[
-				"val",
-				"value\t(__init__.py)"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "center/centerapp/routes.py",
+			"file": "client/src/views/Home.vue",
 			"settings":
 			{
-				"buffer_size": 5925,
+				"buffer_size": 557,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/src/App.vue",
+			"settings":
+			{
+				"buffer_size": 451,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/src/components/MainHeader.vue",
+			"settings":
+			{
+				"buffer_size": 208,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "storage/storageapp/routes.py",
+			"file": "client/src/views/Registration.vue",
 			"settings":
 			{
-				"buffer_size": 1564,
+				"buffer_size": 89,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "storage/storageapp/models.py",
-			"settings":
-			{
-				"buffer_size": 136,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "center/centerapp/models.py",
-			"settings":
-			{
-				"buffer_size": 1797,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -675,11 +676,25 @@
 		"/G/MyRepositories/Diplom",
 		"/G/MyRepositories/Diplom/center",
 		"/G/MyRepositories/Diplom/center/centerapp",
-		"/G/MyRepositories/Diplom/storage",
-		"/G/MyRepositories/Diplom/storage/storageapp"
+		"/G/MyRepositories/Diplom/client",
+		"/G/MyRepositories/Diplom/client/public",
+		"/G/MyRepositories/Diplom/client/src",
+		"/G/MyRepositories/Diplom/client/src/components",
+		"/G/MyRepositories/Diplom/client/src/router",
+		"/G/MyRepositories/Diplom/client/src/views"
 	],
 	"file_history":
 	[
+		"/G/MyRepositories/Diplom/client/src/components/MainHeader.vue",
+		"/G/MyRepositories/Diplom/client/src/router/index.js",
+		"/G/MyRepositories/Diplom/client/src/main.js",
+		"/G/MyRepositories/Diplom/client/src/components/bottom.vue",
+		"/G/MyRepositories/Diplom/client/src/components/HelloWorld.vue",
+		"/G/MyRepositories/Diplom/client/src/components/Login",
+		"/G/MyRepositories/Diplom/client/src/components/Main.vue",
+		"/G/MyRepositories/Diplom/center/centerapp/models.py",
+		"/G/MyRepositories/Diplom/storage/storageapp/routes.py",
+		"/G/MyRepositories/Diplom/center/centerapp/routes.py",
 		"/G/MyRepositories/Diplom/center/centere.py",
 		"/G/MyRepositories/1JOB/Real/reflection/backend/explapp/serializers.py",
 		"/G/MyRepositories/1JOB/Real/reflection/backend/explapp/services.py",
@@ -698,13 +713,10 @@
 		"/G/MyRepositories/explonline/htdocs/core/config/config.inc.php",
 		"/G/OpenServer/OSPanel/domains/explonline/dumps/site_expl.sql",
 		"/G/MyRepositories/Diplom/center/centerapp/fasttask.py",
-		"/G/MyRepositories/Diplom/storage/storageapp/routes.py",
-		"/G/MyRepositories/Diplom/center/centerapp/models.py",
 		"/G/MyRepositories/Diplom/storage/storage.py",
 		"/G/MyRepositories/Diplom/center/centerapp/__init__.py",
 		"/G/MyRepositories/Diplom/center/config.py",
 		"/G/MyRepositories/Diplom/center/database.py",
-		"/G/MyRepositories/Diplom/center/centerapp/routes.py",
 		"/G/MyRepositories/Diplom/storage/req.txt",
 		"/G/MyRepositories/Diplom/storage/config.py",
 		"/G/MyRepositories/Diplom/storage/storageapp/models.py",
@@ -800,18 +812,11 @@
 		"/G/MyRepositories/1JOB/Real/namestorage/client/src/router/index.js",
 		"/G/MyRepositories/1JOB/Real/namestorage/client/src/components/requests/ImageRequest.js",
 		"/G/MyRepositories/1JOB/Real/namestorage/client/src/components/otherScripts/TextProcessing.js",
-		"/G/MyRepositories/1JOB/Real/namestorage/backend/namestorage_project/views.py",
-		"/G/MyRepositories/1JOB/Real/namestorage/backend/namestorage_project/serializers.py",
-		"/G/MyRepositories/1JOB/Real/namestorage/backend/namestorage_project/urls.py",
-		"/G/MyRepositories/1JOB/Real/namestorage/backend/req.txt",
-		"/G/MyRepositories/1JOB/Real/namestorage/backend/env_NameStorage/Lib/site-packages/django/contrib/gis/gdal/raster/source.py",
-		"/G/MyRepositories/1JOB/Real/namestorage/backend/env_NameStorage/Lib/site-packages/django/forms/fields.py",
-		"/G/MyRepositories/1JOB/Real/namestorage/backend/env_NameStorage/Lib/site-packages/django/db/models/fields/__init__.py",
-		"/G/MyRepositories/1JOB/Real/namestorage/backend/env_NameStorage/Lib/site-packages/rest_framework/fields.py"
+		"/G/MyRepositories/1JOB/Real/namestorage/backend/namestorage_project/views.py"
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -849,32 +854,27 @@
 			[
 				{
 					"buffer": 0,
-					"file": "center/centerapp/routes.py",
+					"file": "client/src/views/Home.vue",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5925,
+						"buffer_size": 557,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4270,
-								4270
+								320,
+								320
 							]
 						],
 						"settings":
 						{
-							"SL.55.region_keys":
-							[
-							],
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2059.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -882,57 +882,26 @@
 				},
 				{
 					"buffer": 1,
-					"file": "storage/storageapp/routes.py",
+					"file": "client/src/App.vue",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1564,
+						"buffer_size": 451,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1324,
-								1324
+								47,
+								47
 							]
 						],
 						"settings":
 						{
-							"SL.17.region_keys":
-							[
-							],
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
-							"tab_size": 4,
+							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 90.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "storage/storageapp/models.py",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 136,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								103,
-								107
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -942,33 +911,58 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "center/centerapp/models.py",
+					"buffer": 2,
+					"file": "client/src/components/MainHeader.vue",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1797,
+						"buffer_size": 208,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1611,
-								1611
+								70,
+								70
 							]
 						],
 						"settings":
 						{
-							"SL.59.region_keys":
-							[
-							],
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
-							"tab_size": 4,
+							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 360.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "client/src/views/Registration.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 89,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								89,
+								89
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -979,7 +973,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 24.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -1028,7 +1022,7 @@
 	"project": "Diplom.sublime-project",
 	"replace":
 	{
-		"height": 44.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
