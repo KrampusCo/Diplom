@@ -7,24 +7,23 @@ import requests
 api = Api(storageapp)
 
 
-class CreateFile(Resource):
-    def post(self):
-
-        try:
-            new_file = File(file=1)
-            db.session.add(new_file)
-            db.session.commit()
-        except:
-            return{
-                "Status": "gg",
-                "success": "Error",
-                
-            }
-        return{
-            "Status": "Success",
-            "success": "0",
-            "file_id": new_file.id
-        }
+ class CreateFile(Resource):
+     def post(self):
+         print("hello")
+         try:
+             new_file = File(file=1)
+             db.session.add(new_file)
+             db.session.commit()
+         except:
+             return{
+                 "Status": "gg",
+                 "success": "Error",
+             }
+         return{
+             "Status": "Success",
+             "success": "0",
+             "file_id": new_file.id
+         }
 
 
 class UploadFile(Resource):
@@ -46,12 +45,11 @@ class UploadFile(Resource):
                 file = File.query.get(file_id)
                 print(file.file)
                 file.file = file.file + bytes(byte, 'utf-8')
-                print(file.file) 
+                print(file.file)
                 db.session.commit()
                 return{"status": "ok"}
             else:
                 return{"status": "error file exists"}
-
 
 
 api.add_resource(CreateFile, '/CreateFile')

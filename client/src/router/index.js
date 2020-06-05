@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-
+import Registration from "../views/Registration.vue"
+import FileList from "../views/FileList.vue"
 Vue.use(VueRouter)
 
   const routes = [
@@ -13,10 +14,12 @@ Vue.use(VueRouter)
   {
     path: '/registration',
     name: 'Registration',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Registration.vue')
+    component: Registration,
+  },
+  {
+    path: "/filelist",
+    name: 'filelist',
+    component: FileList
   }
 ]
 

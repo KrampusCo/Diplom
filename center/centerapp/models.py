@@ -51,6 +51,6 @@ class File(db.Model):
             return {
                 'name': x.name,
                 'size': x.size,
-                'date': str(x.date),
+                'date': str(x.date)[0:16],
             }
         return {'files': list(map(lambda x: to_json(x), File.query.filter_by(username_id=id).all()))}

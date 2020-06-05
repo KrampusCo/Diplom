@@ -59,3 +59,41 @@ def bubbleSortOff(array1):
             break
 
 bubbleSortOff(array1)
+
+
+arrays = [
+    {"date": "25.06.04",
+     "name": "q"},
+    {"date": "25.06.04",
+     "name": "w"},
+    {"date": "23.06.04",
+     "name": "s"},
+    {"date": "22.06.04",
+     "name": "d"},
+    {"date": "22.06.04",
+     "name": "a"},
+    {"date": "22.06.04",
+     "name": "a"}]
+
+arrays2 = []
+arrays3 = []
+for i in range(0, len(arrays)):
+    print(arrays[i])
+    if i + 1 == len(arrays):
+        if arrays[i]["date"] != arrays[i - 1]["date"]:
+            arrays2.append({arrays[i]["date"]: {}})
+        if arrays[i]["date"] == arrays[i - 1]["date"]:
+            arrays2.append({arrays[i]["date"]: {}})
+        break
+    if arrays[i]["date"] != arrays[i + 1]["date"]:
+        arrays2.append({arrays[i]["date"]: {}})
+print(arrays2)
+arrays3 = arrays2.keys()
+print(arrays3)
+for i in range(0, len(arrays2)):
+    for j in range(0, len(arrays)):
+
+        if arrays2[i] == arrays[j]["date"]:
+            arrays2[i].append(arrays["name"])
+
+print(arrays2)

@@ -10,11 +10,23 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import time
 import datetime
 import requests
+from flask_cors import CORS
 
 centerapp.config['JWT_SECRET_KEY'] = 'something-super-secret'  # Change this!
 centerapp.config['JWT_ACCESS_TOKEN_EXPIRES'] = datetime.timedelta(seconds=3006000)
 jwt = JWTManager(centerapp)
 api = Api(centerapp)
+CORS(centerapp)
+
+
+@centerapp.after_request
+def after_request(response):
+    white_origin = ['http://localhost:8080', 'http://localhost:5000']
+    if request.headers['Origin'] in white_origin:
+        response.headers['Access-Control-Allow-Origin'] = request.headers['Origin'] 
+        response.headers['Access-Control-Allow-Methods'] = 'PUT,GET,POST,DELETE'
+        response.headers['Access-Control-Allow-Headers'] = 'Content-Type,Authorization'
+    return response
 
 
 class UserRegistration(Resource):
@@ -60,7 +72,7 @@ class UserLogin(Resource):
                 "token": access_token,
                 "username": user.username
             }
-        }
+        }, 200
 
 
 # class UserLogoutAccess(Resource):
@@ -159,7 +171,7 @@ class ChekFileUser(Resource):
         file_exist = File.query.filter_by(username_id=user.id,
                                           file_id=file_id,
                                           server_id=server_id).first()
-        print(user.id,"  ", file_id," ", server_id)
+        print(user.id, "  ", file_id, " ", server_id)
         if (file_exist):
             return {
                 "operations": "Chek file user",
@@ -170,6 +182,7 @@ class ChekFileUser(Resource):
                 "operations": "Chek file user",
                 "status": "Bad"
             }
+
 
 class AllUserFile(Resource):
     @jwt_required
