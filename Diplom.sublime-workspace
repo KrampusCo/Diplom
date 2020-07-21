@@ -4,12 +4,88 @@
 		"selected_items":
 		[
 			[
-				"format",
-				"fileFormat\tabc"
+				"sha",
+				"sharing_link\t(DownloadFile.vue)"
+			],
+			[
+				"b",
+				"byte\t(FileList.js)"
+			],
+			[
+				"do",
+				"downloadFile\tabc"
+			],
+			[
+				"D",
+				"DownloadFile\tabc"
+			],
+			[
+				"file",
+				"file_id\t(FileList.vue)"
+			],
+			[
+				"add",
+				"add_resource\tfunction"
+			],
+			[
+				"res",
+				"result\tabc"
+			],
+			[
+				"server_",
+				"server_ip\tabc"
+			],
+			[
+				"ser",
+				"server_id\t(FileList.vue)"
+			],
+			[
+				"U",
+				"UploadFile\tabc"
+			],
+			[
+				"v",
+				"v-bind\t:prop=\"data\""
+			],
+			[
+				"serv",
+				"server_id\t(FileList.js)"
+			],
+			[
+				"re",
+				"return\tabc"
 			],
 			[
 				"fil",
-				"filePath\tabc"
+				"fileName\tabc"
+			],
+			[
+				"shar",
+				"sharing_link\t(DownloadFile.js)"
+			],
+			[
+				"s",
+				"sharing_link"
+			],
+			[
+				"sh",
+				"sharing_link\tabc"
+			],
+			[
+				"se",
+				"server_id"
+			],
+			[
+				"jwt",
+				"jwt_required\tabc"
+			],
+			[
+				"v-b",
+				"v-btn\t(FileCard.vue)"
+			],
+			[
+				"format",
+				"fileFormat\tabc"
 			],
 			[
 				"co",
@@ -68,10 +144,6 @@
 				"arrays2\tabc"
 			],
 			[
-				"res",
-				"responseData\tabc"
-			],
-			[
 				"pr",
 				"print\t(routes.py)"
 			],
@@ -86,10 +158,6 @@
 			[
 				"d",
 				"default\t(Registration.vue)"
-			],
-			[
-				"re",
-				"registration\tabc"
 			],
 			[
 				"Co",
@@ -132,10 +200,6 @@
 				"MaterialChartCard\t(MaterialChartCard.vue)"
 			],
 			[
-				"v",
-				"v-if\tabc"
-			],
-			[
 				"ro",
 				"router-link\tabc"
 			],
@@ -168,20 +232,12 @@
 				"style\tTag"
 			],
 			[
-				"file",
-				"file\tabc"
-			],
-			[
 				"for",
 				"form\tabc"
 			],
 			[
 				"user",
 				"usertoken\tabc"
-			],
-			[
-				"ser",
-				"server_id\tabc"
 			],
 			[
 				"Ch",
@@ -198,10 +254,6 @@
 			[
 				"Al",
 				"AllUserFile\tabc"
-			],
-			[
-				"add",
-				"add_resource\tfunction"
 			],
 			[
 				"get",
@@ -238,10 +290,6 @@
 			[
 				"measu",
 				"measure_point_list\t(views.py)"
-			],
-			[
-				"s",
-				"system_type\tabc"
 			],
 			[
 				"fo",
@@ -384,10 +432,6 @@
 				"defaultStartDate\tabc"
 			],
 			[
-				"se",
-				"services\tmodule"
-			],
-			[
 				"pro",
 				"profile"
 			],
@@ -470,69 +514,25 @@
 			[
 				"UserAc",
 				"UserAccountSerializer"
-			],
-			[
-				"Acc",
-				"AccountSerializer\tabc"
-			],
-			[
-				"o",
-				"object\tabc"
-			],
-			[
-				"is_",
-				"is_superuser\tabc"
-			],
-			[
-				"expl",
-				"explapp\tabc"
-			],
-			[
-				"n",
-				"null\tabc"
-			],
-			[
-				"Ca",
-				"CASCADE"
-			],
-			[
-				"Use",
-				"User_Account\tabc"
-			],
-			[
-				"M",
-				"Model"
-			],
-			[
-				"exp",
-				"explapp\t(settings.py)"
-			],
-			[
-				"Ма",
-				"Машиноместо\tabc"
-			],
-			[
-				"Аренд",
-				"Арендатор\tabc"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "client/src/plugins/requests/FileList.js",
+			"file": "client/src/views/DownloadFile.vue",
 			"settings":
 			{
-				"buffer_size": 742,
+				"buffer_size": 2394,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "client/src/components/FileCard.vue",
+			"file": "client/src/plugins/requests/DownloadFile.js",
 			"settings":
 			{
-				"buffer_size": 2738,
+				"buffer_size": 1064,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -541,7 +541,7 @@
 			"file": "client/src/views/FileList.vue",
 			"settings":
 			{
-				"buffer_size": 3355,
+				"buffer_size": 3487,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -550,43 +550,34 @@
 			"file": "client/src/components/LoadFile.vue",
 			"settings":
 			{
-				"buffer_size": 1523,
+				"buffer_size": 1953,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "client/src/views/Home.vue",
+			"file": "client/src/plugins/requests/FileList.js",
 			"settings":
 			{
-				"buffer_size": 7525,
+				"buffer_size": 1614,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "client/public/index.html",
+			"file": "client/src/components/FileCard.vue",
 			"settings":
 			{
-				"buffer_size": 981,
+				"buffer_size": 3237,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "center/centerapp/routes.py",
 			"settings":
 			{
-				"buffer_size": 6428,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "center/centerapp/fasttask.py",
-			"settings":
-			{
-				"buffer_size": 2391,
+				"buffer_size": 7619,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -595,7 +586,7 @@
 			"file": "center/centerapp/models.py",
 			"settings":
 			{
-				"buffer_size": 1803,
+				"buffer_size": 1975,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -604,7 +595,7 @@
 			"file": "storage/storageapp/routes.py",
 			"settings":
 			{
-				"buffer_size": 1584,
+				"buffer_size": 1888,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -657,6 +648,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"proje",
+				"Project: Close"
+			],
+			[
+				"projec",
+				"Project: Edit Project"
+			],
 			[
 				"Package Control: ins",
 				"Package Control: Install Package"
@@ -728,13 +727,9 @@
 	"expanded_folders":
 	[
 		"/G/MyRepositories/Diplom",
-		"/G/MyRepositories/Diplom/center",
-		"/G/MyRepositories/Diplom/center/centerapp",
 		"/G/MyRepositories/Diplom/client",
-		"/G/MyRepositories/Diplom/client/public",
 		"/G/MyRepositories/Diplom/client/src",
 		"/G/MyRepositories/Diplom/client/src/assets",
-		"/G/MyRepositories/Diplom/client/src/assets/svg",
 		"/G/MyRepositories/Diplom/client/src/components",
 		"/G/MyRepositories/Diplom/client/src/plugins",
 		"/G/MyRepositories/Diplom/client/src/plugins/requests",
@@ -745,6 +740,18 @@
 	],
 	"file_history":
 	[
+		"/C/Users/zolk/Desktop/khpk.jpg",
+		"/G/MyRepositories/Diplom/center/centerapp/fasttask.py",
+		"/G/MyRepositories/Diplom/client/src/router/index.js",
+		"/G/MyRepositories/Diplom/client/src/plugins/requests/FileList.js",
+		"/G/MyRepositories/Diplom/center/centerapp/models.py",
+		"/G/MyRepositories/Diplom/client/src/views/Home.vue",
+		"/G/MyRepositories/Diplom/client/src/components/FileCard.vue",
+		"/G/MyRepositories/Diplom/client/src/views/FileList.vue",
+		"/G/MyRepositories/Diplom/client/src/components/LoadFile.vue",
+		"/G/MyRepositories/Diplom/client/public/index.html",
+		"/G/MyRepositories/Diplom/center/centerapp/routes.py",
+		"/G/MyRepositories/Diplom/Diplom.sublime-project",
 		"/G/MyRepositories/Diplom/client/src/assets/svg/txt.svg",
 		"/G/MyRepositories/Diplom/client/src/assets/svg/png-file-extension-interface-symbol.svg",
 		"/G/MyRepositories/Diplom/client/src/assets/svg/docx-file-format.svg",
@@ -753,13 +760,7 @@
 		"/G/MyRepositories/Diplom/client/src/views/Registration.vue",
 		"/C/Users/zolk/Downloads/load.txt",
 		"/G/MyRepositories/Diplom/center/venv/Lib/site-packages/setuptools/command/egg_info.py",
-		"/G/MyRepositories/Diplom/client/src/components/FileCard.vue",
-		"/G/MyRepositories/Diplom/client/src/router/index.js",
-		"/G/MyRepositories/Diplom/client/src/plugins/requests/FileList.js",
 		"/G/MyRepositories/Diplom/client/src/plugins/LoginRegistration.js",
-		"/G/MyRepositories/Diplom/client/src/views/FileList.vue",
-		"/G/MyRepositories/Diplom/client/src/views/Home.vue",
-		"/G/MyRepositories/Diplom/center/centerapp/routes.py",
 		"/G/MyRepositories/Diplom/client/src/plugins/request.js",
 		"/C/Users/zolk/Diplom.bat",
 		"/C/Users/zolk/Diplom2.bat",
@@ -770,7 +771,6 @@
 		"/G/MyRepositories/Diplom/client/src/components/MainHeader.vue",
 		"/G/MyRepositories/Diplom/client/src/main.js",
 		"/C/Users/zolk/Downloads/svg/3dm-file-format.svg",
-		"/G/MyRepositories/Diplom/client/public/index.html",
 		"/G/MyRepositories/Diplom/client/src/components/MaterialChartCard.vue",
 		"/G/MyRepositories/Diplom/client/src/components/MaterialStatsCard.vue",
 		"/G/MyRepositories/Diplom/client/src/plugins/chartist.js",
@@ -781,7 +781,6 @@
 		"/G/MyRepositories/Diplom/client/src/components/HelloWorld.vue",
 		"/G/MyRepositories/Diplom/client/src/components/Login",
 		"/G/MyRepositories/Diplom/client/src/components/Main.vue",
-		"/G/MyRepositories/Diplom/center/centerapp/models.py",
 		"/G/MyRepositories/Diplom/storage/storageapp/routes.py",
 		"/G/MyRepositories/Diplom/center/centere.py",
 		"/G/MyRepositories/1JOB/Real/reflection/backend/explapp/serializers.py",
@@ -800,7 +799,6 @@
 		"/G/OpenServer/OSPanel/domains/explonline/build/build.xml",
 		"/G/MyRepositories/explonline/htdocs/core/config/config.inc.php",
 		"/G/OpenServer/OSPanel/domains/explonline/dumps/site_expl.sql",
-		"/G/MyRepositories/Diplom/center/centerapp/fasttask.py",
 		"/G/MyRepositories/Diplom/storage/storage.py",
 		"/G/MyRepositories/Diplom/center/config.py",
 		"/G/MyRepositories/Diplom/center/database.py",
@@ -869,14 +867,11 @@
 		"/G/MyRepositories/1JOB/Real/namestorage/client/index.html",
 		"/G/MyRepositories/1JOB/Real/namestorage/backend/static/favicon.ico",
 		"/G/MyRepositories/1JOB/Real/namestorage/client/src/components/Dictionary.vue",
-		"/G/MyRepositories/1JOB/Real/namestorage/client/package.json",
-		"/G/MyRepositories/1JOB/Real/namestorage/client/src/components/style.scss",
-		"/G/MyRepositories/1JOB/Real/namestorage/client/src/App.vue",
-		"/G/MyRepositories/1JOB/Real/namestorage/client/static/style.css"
+		"/G/MyRepositories/1JOB/Real/namestorage/client/package.json"
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -890,6 +885,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"name",
+			"  ",
+			" ",
+			"    ",
+			"btn",
 			"space",
 			"spase",
 			" \"@/",
@@ -915,6 +915,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
 			"\t",
 			"data: () => ({",
 			"Читать больше",
@@ -929,24 +930,60 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "client/src/plugins/requests/FileList.js",
+					"file": "client/src/views/DownloadFile.vue",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 742,
+						"buffer_size": 2394,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								732,
-								732
+								2057,
+								2057
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1038.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"file": "/C/Users/zolk/Desktop/khpk.png",
+					"semi_transient": false,
+					"stack_index": 0,
+					"type": "image"
+				},
+				{
+					"buffer": 1,
+					"file": "client/src/plugins/requests/DownloadFile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1064,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								567,
+								567
 							]
 						],
 						"settings":
@@ -958,24 +995,113 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "client/src/components/FileCard.vue",
+					"buffer": 2,
+					"file": "client/src/views/FileList.vue",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2738,
+						"buffer_size": 3487,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								337,
-								337
+								3473,
+								3473
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1191.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "client/src/components/LoadFile.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1953,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								970,
+								970
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 468.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "client/src/plugins/requests/FileList.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1614,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								818,
+								1169
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 354.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "client/src/components/FileCard.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3035,
+								3035
 							]
 						],
 						"settings":
@@ -985,130 +1111,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1188.0,
+						"translation.y": 1017.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "client/src/views/FileList.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3355,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2518,
-								2518
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1296.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "client/src/components/LoadFile.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1523,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10,
-								10
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "client/src/views/Home.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7525,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2712,
-								2716
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 421.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "client/public/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 981,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								254,
-								254
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -1117,15 +1123,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6428,
+						"buffer_size": 7619,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5042,
-								3787
+								6438,
+								6438
 							]
 						],
 						"settings":
@@ -1135,57 +1141,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 108.0,
+						"translation.y": 3150.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 7,
-					"file": "center/centerapp/fasttask.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2391,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2214,
-								2214
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1003.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
 					"file": "center/centerapp/models.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1803,
+						"buffer_size": 1975,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1684,
-								1684
+								1486,
+								1486
 							]
 						],
 						"settings":
@@ -1195,91 +1171,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 108.0,
+						"translation.y": 336.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 8,
 					"file": "storage/storageapp/routes.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1584,
+						"buffer_size": 1888,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								180,
-								180
-							],
-							[
-								209,
-								209
-							],
-							[
-								230,
-								230
-							],
-							[
-								254,
-								254
-							],
-							[
-								268,
-								268
-							],
-							[
-								305,
-								305
-							],
-							[
-								343,
-								343
-							],
-							[
-								376,
-								376
-							],
-							[
-								393,
-								393
-							],
-							[
-								414,
-								414
-							],
-							[
-								447,
-								447
-							],
-							[
-								484,
-								484
-							],
-							[
-								499,
-								499
-							],
-							[
-								516,
-								516
-							],
-							[
-								550,
-								550
-							],
-							[
-								579,
-								579
-							],
-							[
-								615,
-								615
+								1783,
+								1793
 							]
 						],
 						"settings":
@@ -1289,10 +1201,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 145.0,
+						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -1388,7 +1300,7 @@
 	{
 	},
 	"show_minimap": true,
-	"show_open_files": false,
+	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 251.0,

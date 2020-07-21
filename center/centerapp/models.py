@@ -44,6 +44,7 @@ class File(db.Model):
     size = db.Column(db.Integer)
     date = db.Column(db.DateTime, nullable=False)
     key = db.Column(db.String(200))
+    sharing_link = db.Column(db.String(200))
 
     @classmethod
     def return_all(cls, id):
@@ -52,5 +53,8 @@ class File(db.Model):
                 'name': x.name,
                 'size': x.size,
                 'date': str(x.date)[0:16],
+                'server_id': x.server_id,
+                'file_id': x.file_id,
+                'sharing_link': x.sharing_link
             }
         return {'files': list(map(lambda x: to_json(x), File.query.filter_by(username_id=id).all()))}

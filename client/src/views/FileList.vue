@@ -60,7 +60,8 @@
             <v-flex d-flex xs12 order-xs5 >
               <v-row>
                 <v-col >
-                  <FileCard v-bind:file-name="file.name"></FileCard>
+                  <FileCard v-bind:file-name="file.name" v-bind:sharing-link="file.sharing_link"
+                            v-bind:server-id="file.server_id" v-bind:file-id="file.file_id"></FileCard>
                 </v-col>
               </v-row>
             </v-flex>

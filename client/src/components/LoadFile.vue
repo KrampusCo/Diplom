@@ -37,6 +37,7 @@ export default {
     file: null,
     key: null,
     ipserver: null,
+    content: null,
     token: localStorage.getItem("token"),
   }),
   methods:{
@@ -44,8 +45,19 @@ export default {
       console.log(this.file.name)
         this.request.CreateFile(this.token, this.file.name, this.file.size, this.key)
         .then((responseData) => {
+          this.UploadFile(responseData.data.server_ip, responseData.data.file_id)
+      })
+    },
+    UploadFile(server_ip, file_id){
+      let reader = new FileReader()
+      reader.readAsText(this.file)
+      reader.onload = function() {
+        let request = new FileList
+        request.uploadFile(localStorage.getItem("token"), server_ip, file_id, reader.result)
+          .then((responseData) => {
           console.log(responseData)
-        })
+      })
+      };
     }
   }
 }

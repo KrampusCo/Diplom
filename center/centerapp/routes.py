@@ -1,7 +1,7 @@
 from centerapp import db, centerapp
 from centerapp.models import User, File, StorageServer
 from flask import request, jsonify
-from flask_restful import Resource, Api
+from flask_restful import Resource, Api, request
 from flask_jwt_extended import (
     JWTManager, jwt_required, create_access_token,
     get_jwt_identity, jwt_refresh_token_required, get_raw_jwt,
@@ -10,23 +10,15 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import time
 import datetime
 import requests
+import uuid
 from flask_cors import CORS
 
 centerapp.config['JWT_SECRET_KEY'] = 'something-super-secret'  # Change this!
-centerapp.config['JWT_ACCESS_TOKEN_EXPIRES'] = datetime.timedelta(seconds=3006000)
+centerapp.config['JWT_ACCESS_TOKEN_EXPIRES'] = datetime.timedelta(
+    seconds=3006000)
 jwt = JWTManager(centerapp)
 api = Api(centerapp)
 CORS(centerapp)
-
-
-@centerapp.after_request
-def after_request(response):
-    white_origin = ['http://localhost:8080', 'http://localhost:5000']
-    if request.headers['Origin'] in white_origin:
-        response.headers['Access-Control-Allow-Origin'] = request.headers['Origin'] 
-        response.headers['Access-Control-Allow-Methods'] = 'PUT,GET,POST,DELETE'
-        response.headers['Access-Control-Allow-Headers'] = 'Content-Type,Authorization'
-    return response
 
 
 class UserRegistration(Resource):
@@ -158,7 +150,8 @@ class AddFile(Resource):
         return {
             "operations": "User Registration",
             "status": "Success",
-            "server_ip": server.ip
+            "server_ip": server.ip,
+            "file_id": file_id
         }
 
 
@@ -190,6 +183,53 @@ class AllUserFile(Resource):
         user = User.query.filter_by(username=get_jwt_identity()).first()
         return File.return_all(user.id)
 
+
+class SharingFile(Resource):
+    @jwt_required
+    def post(self):
+        print("gg")
+        user = User.query.filter_by(username=get_jwt_identity()).first()
+        server = StorageServer.query.filter_by(id=1).first().id
+        file_id = request.form["file_id"]
+
+        file_exist = File.query.filter_by(username_id=user.id,
+                                          file_id=file_id,
+                                          server_id=server).first()
+        file_exist.sharing_link = uuid.uuid4().hex
+        try:
+            db.session.commit()
+        except NameError:
+            return {
+                "status": "error",
+                "message": "Could not add user: user exists"
+            }
+        return {
+            "operations": "User Registration",
+            "status": "Success",
+            "sharing_link": file_exist.sharing_link
+        }
+
+
+class LinkFile(Resource):
+    def get(self):
+        link = request.args['sharing_link']
+        try:
+            file_exist = File.query.filter_by(sharing_link=link).first()
+        except NameError:
+            return {
+                "status": "error",
+                "message": "Could not add user: file exists"
+            }
+        return {
+            'name': file_exist.name,
+            'size': file_exist.size,
+            'date': str(file_exist.date)[0:16],
+            'server_id': file_exist.server_id,
+            'file_id': file_exist.file_id,
+            'sharing_link': file_exist.sharing_link
+        }
+
+
 api.add_resource(UserRegistration, '/registration')
 api.add_resource(UserLogin, '/login')
 # api.add_resource(UserLogoutAccess, '/logout/access')
@@ -198,5 +238,7 @@ api.add_resource(TokenRefresh, '/token/refresh')
 api.add_resource(AllUsers, '/users')
 api.add_resource(SecretResource, '/secret')
 api.add_resource(AddFile, '/addfile')
+api.add_resource(SharingFile, '/sharingFile')
+api.add_resource(LinkFile, '/download')
 api.add_resource(ChekFileUser, '/check')
 api.add_resource(AllUserFile, '/AllUserFile')
